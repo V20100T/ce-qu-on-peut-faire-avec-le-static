@@ -5,6 +5,6 @@ slug: "newsletter"
 fonction: "newsletter"
 cat: "outils"
 cookies: false
-weight: 52
+weight: 54
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

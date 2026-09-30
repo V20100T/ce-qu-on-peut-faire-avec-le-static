@@ -5,6 +5,6 @@ slug: "a-emporter"
 fonction: "a-emporter"
 cat: "resto"
 cookies: false
-weight: 34
+weight: 35
 metiers: ["restaurant"]
 ---

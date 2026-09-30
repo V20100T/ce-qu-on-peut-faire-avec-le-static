@@ -5,6 +5,6 @@ slug: "avant-apres"
 fonction: "avant-apres"
 cat: "valeur"
 cookies: false
-weight: 12
+weight: 13
 metiers: ["commerce","immobilier","bailleur"]
 ---

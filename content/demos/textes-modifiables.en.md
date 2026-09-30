@@ -5,6 +5,6 @@ slug: "textes-modifiables"
 fonction: "textes-modifiables"
 cat: "outils"
 cookies: false
-weight: 59
+weight: 61
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

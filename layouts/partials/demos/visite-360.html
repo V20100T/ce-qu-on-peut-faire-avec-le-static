@@ -1,23 +1,20 @@
 {{ $en := .en }}
-<div class="p360" data-p360>
-  <div class="p360__bande" data-bande>
-    {{- range seq 2 }}
-    <div class="p360__scene">
-      <div class="p360__mur" style="background:#e9dcc6"><span style="left:30%;bottom:18%">🛋️</span><span style="left:65%;top:18%;font-size:3rem">🖼️</span><span style="left:8%;bottom:18%">🪴</span></div>
-      <div class="p360__mur" style="background:#d9e6ea"><span style="left:25%;top:14%;font-size:5rem">🪟</span><span style="left:60%;bottom:18%">🪑</span><span style="left:74%;bottom:18%">🪑</span></div>
-      <div class="p360__mur" style="background:#efe3d3"><span style="left:30%;bottom:18%;font-size:5rem">🚪</span><span style="left:70%;top:20%;font-size:2.4rem">🕰️</span></div>
-      <div class="p360__mur" style="background:#dfe9d8"><span style="left:20%;bottom:18%">📺</span><span style="left:55%;bottom:18%">🛏️</span><span style="left:80%;top:22%;font-size:2.4rem">💡</span></div>
-    </div>
-    {{- end }}
+<div data-v360 data-pano="{{ "img/magasin-360.jpg" | relURL }}" data-js="{{ "libs/pannellum/pannellum.js" | relURL }}" data-css="{{ "libs/pannellum/pannellum.css" | relURL }}">
+  <div class="d-onglets" role="group">
+    <button type="button" aria-pressed="true" data-source="photo">📷 {{ cond $en "Real 360° photo" "Vraie photo 360°" }}</button>
+    <button type="button" aria-pressed="false" data-source="google">🗺️ Google Street View*</button>
   </div>
-  <p class="p360__aide">⇆ {{ cond $en "Drag to look around" "Faites glisser pour regarder autour" }}</p>
+  <div class="v360" data-zone>
+    <button type="button" class="v360__lancer" data-lancer style="background-image:url({{ "img/magasin-360-apercu.jpg" | relURL }})">
+      <span>🔄 {{ cond $en "Start the 360° tour" "Lancer la visite 360°" }}</span>
+    </button>
+  </div>
+  <p class="d-doux" data-legende-photo>{{ cond $en "Drag to look all around, pinch or scroll to zoom. Photo: Eliseevsky store, Moscow (1901 interior) — Artem Svetlov, CC BY 2.0, via Wikimedia Commons." "Faites glisser pour regarder tout autour, pincez ou molette pour zoomer. Photo : épicerie Elisseïev, Moscou (décor de 1901) — Artem Svetlov, CC BY 2.0, via Wikimedia Commons." }}</p>
+  <p class="d-doux" data-legende-google hidden>{{ cond $en "Inside the Galeries Lafayette, Paris, on Google Street View. If your shop has Google 360° photos, we can show them the same way." "À l'intérieur des Galeries Lafayette, à Paris, sur Google Street View. Si votre commerce a des photos 360° sur Google, on les affiche de la même façon." }}</p>
 </div>
 <style>
-.p360{position:relative;overflow:hidden;border-radius:14px;height:320px;cursor:grab;touch-action:pan-y;user-select:none}
-.p360:active{cursor:grabbing}
-.p360__bande{display:flex;height:100%;width:max-content;will-change:transform}
-.p360__scene{display:flex;height:100%}
-.p360__mur{position:relative;width:420px;height:100%;border-right:2px solid rgb(0 0 0 / .06);background-image:linear-gradient(transparent 78%,rgb(120 90 60 / .35) 78%) !important;background-color:inherit}
-.p360__mur span{position:absolute;font-size:4rem}
-.p360__aide{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);margin:0;background:rgb(0 0 0 / .55);color:#fff;padding:4px 14px;border-radius:99px;font-size:.88rem}
+.v360{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/9;max-height:520px;width:100%;background:#111}
+.v360 > div, .v360 iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.v360__lancer{position:absolute;inset:0;border:0;cursor:pointer;background-size:cover;background-position:center;display:grid;place-items:center}
+.v360__lancer span{background:rgb(0 0 0 / .6);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;font-size:1.1rem}
 </style>

@@ -5,6 +5,6 @@ slug: "quiz"
 fonction: "quiz"
 cat: "jeux"
 cookies: false
-weight: 25
+weight: 26
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

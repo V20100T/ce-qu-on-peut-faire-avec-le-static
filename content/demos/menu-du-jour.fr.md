@@ -5,6 +5,6 @@ slug: "menu-du-jour"
 fonction: "menu-du-jour"
 cat: "resto"
 cookies: false
-weight: 29
+weight: 30
 metiers: ["restaurant"]
 ---

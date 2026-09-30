@@ -9,7 +9,8 @@
   <script>(()=>{const d=document.documentElement;d.classList.add("js");try{d.dataset.palette=localStorage.getItem("palette")||"terre";d.dataset.mode=localStorage.getItem("mode")||"auto"}catch(e){}})()</script>
   {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-  <meta name="theme-color" content="#FBF6EE">
+  <meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1A1514" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="{{ $titre }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ T "slogan" }}{{ end }}">
   <meta property="og:type" content="website">

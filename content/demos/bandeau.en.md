@@ -5,6 +5,6 @@ slug: "bandeau"
 fonction: "bandeau"
 cat: "outils"
 cookies: false
-weight: 56
+weight: 58
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

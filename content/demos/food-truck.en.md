@@ -5,6 +5,6 @@ slug: "food-truck"
 fonction: "food-truck"
 cat: "resto"
 cookies: true
-weight: 33
+weight: 34
 metiers: ["restaurant"]
 ---

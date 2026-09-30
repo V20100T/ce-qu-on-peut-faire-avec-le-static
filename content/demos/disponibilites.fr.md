@@ -5,6 +5,6 @@ slug: "disponibilites"
 fonction: "disponibilites"
 cat: "agenda"
 cookies: false
-weight: 21
+weight: 22
 metiers: ["bailleur","commerce","restaurant"]
 ---

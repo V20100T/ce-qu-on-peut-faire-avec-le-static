@@ -5,6 +5,6 @@ slug: "memory"
 fonction: "memory"
 cat: "jeux"
 cookies: false
-weight: 26
+weight: 27
 metiers: ["restaurant","commerce","association"]
 ---

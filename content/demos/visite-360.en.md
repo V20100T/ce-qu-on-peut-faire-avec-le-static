@@ -5,6 +5,6 @@ slug: "visite-360"
 fonction: "visite-360"
 cat: "immo"
 cookies: true
-weight: 38
-metiers: ["immobilier","bailleur"]
+weight: 40
+metiers: ["immobilier","bailleur","commerce","restaurant"]
 ---

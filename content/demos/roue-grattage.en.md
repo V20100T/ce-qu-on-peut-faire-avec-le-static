@@ -5,6 +5,6 @@ slug: "roue-grattage"
 fonction: "roue-grattage"
 cat: "jeux"
 cookies: false
-weight: 27
+weight: 28
 metiers: ["restaurant","commerce"]
 ---

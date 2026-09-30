@@ -5,6 +5,6 @@ slug: "ouvert-maintenant"
 fonction: "ouvert-maintenant"
 cat: "resto"
 cookies: false
-weight: 32
+weight: 33
 metiers: ["restaurant","commerce"]
 ---

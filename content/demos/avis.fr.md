@@ -5,6 +5,6 @@ slug: "avis"
 fonction: "avis"
 cat: "valeur"
 cookies: true
-weight: 13
+weight: 14
 metiers: ["restaurant","commerce","immobilier","bailleur"]
 ---

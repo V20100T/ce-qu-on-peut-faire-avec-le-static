@@ -5,6 +5,6 @@ slug: "evenements"
 fonction: "evenements"
 cat: "asso"
 cookies: false
-weight: 48
+weight: 50
 metiers: ["association","restaurant","commerce"]
 ---

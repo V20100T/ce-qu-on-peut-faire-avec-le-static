@@ -5,6 +5,6 @@ slug: "estimation"
 fonction: "estimation"
 cat: "immo"
 cookies: false
-weight: 40
+weight: 42
 metiers: ["immobilier"]
 ---

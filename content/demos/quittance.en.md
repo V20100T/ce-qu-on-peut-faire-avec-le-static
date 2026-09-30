@@ -5,6 +5,6 @@ slug: "quittance"
 fonction: "quittance"
 cat: "bailleur"
 cookies: false
-weight: 44
+weight: 46
 metiers: ["bailleur"]
 ---

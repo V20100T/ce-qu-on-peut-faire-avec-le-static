@@ -130,7 +130,8 @@
       e.preventDefault();
       const v = Object.fromEntries(new FormData(form));
       const sujet = T("Demande de devis", "Quote request") + ` — ${v.nom}${v.entreprise ? " (" + v.entreprise + ")" : ""} — ${selection().length} ${T("fonction(s)", "feature(s)")}`;
-      location.href = `mailto:${document.body.dataset.email}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(texteEmail())}`;
+      const a = Object.assign(document.createElement("a"), { href: `mailto:${document.body.dataset.email}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(texteEmail())}`, target: "_blank", rel: "noopener" });
+      document.body.append(a); a.click(); a.remove();
     });
     document.querySelector("[data-copier]").addEventListener("click", async (e) => {
       try { await navigator.clipboard.writeText(texteEmail()); window.toast(e.currentTarget.dataset.ok); }
@@ -139,6 +140,15 @@
     document.querySelector("[data-vider]").addEventListener("click", () => { choix = {}; sauver(); rendreDevis(); });
     rendreDevis();
   }
+
+  // ---- Liens externes et e-mails : nouvel onglet (y compris les liens ajoutés plus tard par les démos) ----
+  const externe = (a) => {
+    if (!a.href || a.target) return;
+    const u = new URL(a.href, location.href);
+    if (u.protocol === "mailto:" || (u.protocol.startsWith("http") && u.origin !== location.origin)) { a.target = "_blank"; a.rel = "noopener"; }
+  };
+  document.querySelectorAll("a[href]").forEach(externe);
+  document.addEventListener("click", (e) => { const a = e.target.closest("a[href]"); if (a) externe(a); }, true);
 
   // ---- Chrono de chargement (accueil) ----
   const chrono = document.querySelector("[data-chrono]");

@@ -5,6 +5,6 @@ slug: "annonces"
 fonction: "annonces"
 cat: "immo"
 cookies: false
-weight: 37
+weight: 39
 metiers: ["immobilier","bailleur"]
 ---

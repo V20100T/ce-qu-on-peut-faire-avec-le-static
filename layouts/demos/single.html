@@ -50,7 +50,7 @@
 
 {{ define "scripts" }}
 {{- $f := partial "fonction.html" . }}
-{{- $libs := dict "pdf" (slice "documents" "pdf" "quittance" "bon-cadeau") "qrcode" (slice "qr-code") "agenda" (slice "ajouter-agenda" "evenements") }}
+{{- $libs := dict "pdf" (slice "documents" "pdf" "quittance" "bon-cadeau" "revision-loyer") "qrcode" (slice "qr-code") "agenda" (slice "ajouter-agenda" "evenements") }}
 {{- $res := slice (resources.Get "js/libs/commun.js") }}
 {{- range $nom, $ids := $libs }}{{ if in $ids $f.id }}{{ $res = $res | append (resources.Get (printf "js/libs/%s.js" $nom)) }}{{ end }}{{ end }}
 {{- with resources.Get (printf "js/demos/%s.js" $f.id) }}{{ $res = $res | append . }}{{ end }}

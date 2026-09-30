@@ -5,6 +5,6 @@ slug: "statistiques"
 fonction: "statistiques"
 cat: "outils"
 cookies: false
-weight: 54
+weight: 56
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

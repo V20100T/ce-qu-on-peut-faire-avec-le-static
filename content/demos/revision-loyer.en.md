@@ -5,6 +5,6 @@ slug: "revision-loyer"
 fonction: "revision-loyer"
 cat: "bailleur"
 cookies: false
-weight: 43
+weight: 45
 metiers: ["bailleur"]
 ---

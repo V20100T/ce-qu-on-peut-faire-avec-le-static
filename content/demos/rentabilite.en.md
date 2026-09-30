@@ -5,6 +5,6 @@ slug: "rentabilite"
 fonction: "rentabilite"
 cat: "bailleur"
 cookies: false
-weight: 42
+weight: 44
 metiers: ["bailleur","immobilier"]
 ---

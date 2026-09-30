@@ -24,3 +24,17 @@ Après avoir ajouté ou modifié une fonction dans `data/fonctions.json` :
 Ce script recrée les pages de `content/`. Il faut ensuite écrire la démo (`partials/demos/<id>.html`).
 
 Chaque push sur `main` publie le site sur GitHub Pages (`.github/workflows/hugo.yml`).
+
+## Vidéo de présentation
+
+`static/video/presentation-fr|en.mp4` (+ affiche `.jpg` et sous-titres `.vtt`) sont fabriqués par `outils/video.py` : navigation enregistrée avec Playwright, voix de synthèse edge-tts, montage ffmpeg. Pour la refaire après un changement du site :
+
+    hugo --baseURL http://localhost:1415/ -d _apercu
+    python -m http.server 1415 -d _apercu      # dans un autre terminal
+    python outils/video.py                      # ou : python outils/video.py fr
+
+## Crédits
+
+- Photo 360° de la visite virtuelle : épicerie Elisseïev, Moscou — Artem Svetlov, CC BY 2.0, via Wikimedia Commons (`static/img/magasin-360.jpg`).
+- Visionneuse 360° : Pannellum 2.5.6, licence MIT (`static/libs/pannellum/`).
+- QR codes : qrcode-generator de Kazuhiko Arase, licence MIT (`assets/js/libs/qrcode.js`).

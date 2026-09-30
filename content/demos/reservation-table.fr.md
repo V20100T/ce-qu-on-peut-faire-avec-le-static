@@ -5,6 +5,6 @@ slug: "reservation-table"
 fonction: "reservation-table"
 cat: "resto"
 cookies: true
-weight: 35
+weight: 36
 metiers: ["restaurant"]
 ---

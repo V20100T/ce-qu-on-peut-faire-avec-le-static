@@ -1,5 +1,5 @@
 // Réseau d'abord, cache ensuite : les pages déjà visitées restent lisibles hors ligne.
-const CACHE = "static-demo-v1";
+const CACHE = "static-demo-v2";
 const RACINE = new URL("./", self.location).href;
 self.addEventListener("install", (e) => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then((c) => c.add(RACINE)).catch(() => {})); });
 self.addEventListener("activate", (e) => e.waitUntil(

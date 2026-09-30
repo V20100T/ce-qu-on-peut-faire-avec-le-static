@@ -5,6 +5,6 @@ slug: "boutique"
 fonction: "boutique"
 cat: "vendre"
 cookies: true
-weight: 24
+weight: 25
 metiers: ["commerce","restaurant","association"]
 ---

@@ -5,6 +5,6 @@ slug: "galerie"
 fonction: "galerie"
 cat: "valeur"
 cookies: false
-weight: 11
+weight: 12
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

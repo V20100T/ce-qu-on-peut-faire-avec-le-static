@@ -5,6 +5,6 @@ slug: "sondage"
 fonction: "sondage"
 cat: "asso"
 cookies: false
-weight: 50
+weight: 52
 metiers: ["association"]
 ---

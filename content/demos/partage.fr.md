@@ -5,6 +5,6 @@ slug: "partage"
 fonction: "partage"
 cat: "reseaux"
 cookies: false
-weight: 10
+weight: 11
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

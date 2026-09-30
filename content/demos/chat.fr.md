@@ -5,6 +5,6 @@ slug: "chat"
 fonction: "chat"
 cat: "outils"
 cookies: true
-weight: 53
+weight: 55
 metiers: ["commerce","immobilier"]
 ---

@@ -11,6 +11,7 @@
       <p class="boutons">
         <a class="bouton" href="#demos">{{ T "commencer" }} ↓</a>
         <a class="bouton bouton--clair" href="{{ with site.GetPage "/devis" }}{{ .RelPermalink }}{{ end }}">🧺 {{ T "mondevis" }}</a>
+        <a class="bouton bouton--clair" href="{{ with site.GetPage "/demos/video-presentation" }}{{ .RelPermalink }}{{ end }}">▶ {{ T "video" }}</a>
       </p>
       <p class="chrono" data-chrono data-modele="{{ T "chargement" (dict "T" "§") }}" hidden></p>
     </div>

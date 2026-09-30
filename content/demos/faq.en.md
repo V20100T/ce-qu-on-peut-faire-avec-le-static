@@ -5,6 +5,6 @@ slug: "faq"
 fonction: "faq"
 cat: "valeur"
 cookies: false
-weight: 15
+weight: 16
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

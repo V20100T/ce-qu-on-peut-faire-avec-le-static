@@ -5,6 +5,6 @@ slug: "etat-des-lieux"
 fonction: "etat-des-lieux"
 cat: "bailleur"
 cookies: false
-weight: 45
+weight: 47
 metiers: ["bailleur","immobilier"]
 ---

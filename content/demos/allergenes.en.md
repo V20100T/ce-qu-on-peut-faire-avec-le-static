@@ -5,6 +5,6 @@ slug: "allergenes"
 fonction: "allergenes"
 cat: "resto"
 cookies: false
-weight: 31
+weight: 32
 metiers: ["restaurant"]
 ---

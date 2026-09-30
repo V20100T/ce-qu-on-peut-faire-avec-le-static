@@ -5,6 +5,6 @@ slug: "multilingue"
 fonction: "multilingue"
 cat: "contenu"
 cookies: false
-weight: 17
+weight: 18
 metiers: ["restaurant","bailleur","commerce","immobilier"]
 ---

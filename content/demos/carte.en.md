@@ -5,6 +5,6 @@ slug: "carte"
 fonction: "carte"
 cat: "valeur"
 cookies: true
-weight: 14
+weight: 15
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

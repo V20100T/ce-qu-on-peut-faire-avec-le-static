@@ -5,6 +5,6 @@ slug: "arcade"
 fonction: "arcade"
 cat: "jeux"
 cookies: false
-weight: 28
+weight: 29
 metiers: ["restaurant","commerce","association"]
 ---

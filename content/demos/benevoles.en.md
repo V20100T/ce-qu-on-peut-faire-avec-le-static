@@ -5,6 +5,6 @@ slug: "benevoles"
 fonction: "benevoles"
 cat: "asso"
 cookies: false
-weight: 49
+weight: 51
 metiers: ["association"]
 ---

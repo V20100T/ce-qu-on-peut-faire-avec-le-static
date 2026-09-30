@@ -5,6 +5,6 @@ slug: "favoris"
 fonction: "favoris"
 cat: "immo"
 cookies: false
-weight: 41
+weight: 43
 metiers: ["immobilier","commerce"]
 ---

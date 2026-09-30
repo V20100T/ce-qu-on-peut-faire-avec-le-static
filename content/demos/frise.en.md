@@ -5,6 +5,6 @@ slug: "frise"
 fonction: "frise"
 cat: "outils"
 cookies: false
-weight: 61
+weight: 63
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

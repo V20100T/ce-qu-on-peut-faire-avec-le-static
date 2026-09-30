@@ -5,6 +5,6 @@ slug: "blog"
 fonction: "blog"
 cat: "contenu"
 cookies: false
-weight: 16
+weight: 17
 metiers: ["restaurant","commerce","immobilier","bailleur","association"]
 ---

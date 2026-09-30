@@ -5,6 +5,6 @@ slug: "qr-code"
 fonction: "qr-code"
 cat: "resto"
 cookies: false
-weight: 30
+weight: 31
 metiers: ["restaurant","commerce","association"]
 ---

@@ -5,6 +5,6 @@ slug: "livraison"
 fonction: "livraison"
 cat: "resto"
 cookies: false
-weight: 36
+weight: 37
 metiers: ["restaurant"]
 ---

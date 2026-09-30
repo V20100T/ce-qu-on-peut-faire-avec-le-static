@@ -5,6 +5,6 @@ slug: "adhesion-dons"
 fonction: "adhesion-dons"
 cat: "asso"
 cookies: true
-weight: 47
+weight: 49
 metiers: ["association"]
 ---

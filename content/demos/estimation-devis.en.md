@@ -5,6 +5,6 @@ slug: "estimation-devis"
 fonction: "estimation-devis"
 cat: "outils"
 cookies: false
-weight: 58
+weight: 60
 metiers: ["commerce"]
 ---

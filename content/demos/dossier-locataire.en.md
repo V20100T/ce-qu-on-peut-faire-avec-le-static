@@ -5,6 +5,6 @@ slug: "dossier-locataire"
 fonction: "dossier-locataire"
 cat: "bailleur"
 cookies: false
-weight: 46
+weight: 48
 metiers: ["bailleur","immobilier"]
 ---

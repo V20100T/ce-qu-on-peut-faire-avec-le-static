@@ -5,6 +5,6 @@ slug: "ajouter-agenda"
 fonction: "ajouter-agenda"
 cat: "agenda"
 cookies: false
-weight: 22
+weight: 23
 metiers: ["association","restaurant","commerce"]
 ---
