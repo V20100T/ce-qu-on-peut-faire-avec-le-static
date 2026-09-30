@@ -1,0 +1,14 @@
+{{ $en := .en }}
+<div class="d-colonnes">
+  <div class="formulaire">
+    <label>{{ cond $en "Current rent excl. charges (€)" "Loyer actuel hors charges (€)" }}<input type="number" data-i="loyer" value="650" step="0.01"></label>
+    <label>{{ cond $en "Index in the lease (reference quarter)" "Indice du bail (trimestre de référence)" }}<input type="number" data-i="ancien" value="145.17" step="0.01"></label>
+    <label>{{ cond $en "Same quarter, one year later" "Même trimestre, un an après" }}<input type="number" data-i="nouveau" value="146.68" step="0.01"></label>
+    <p class="note">{{ cond $en "Example values: always check the official figures on insee.fr." "Valeurs d'exemple : vérifiez toujours les indices officiels sur insee.fr." }}</p>
+  </div>
+  <div class="d-carte">
+    <p class="d-doux" style="margin:0">{{ cond $en "New rent" "Nouveau loyer" }}</p>
+    <p class="d-resultat" data-nouveau-loyer></p>
+    <p class="d-doux" data-hausse></p>
+  </div>
+</div>

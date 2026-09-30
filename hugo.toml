@@ -1,0 +1,28 @@
+baseURL = "https://v20100t.github.io/ce-qu-on-peut-faire-avec-le-static/"
+title = "Ce qu'on peut faire avec le static"
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+[taxonomies]
+  metier = "metiers"
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[params]
+  # Adresse qui reçoit les demandes de devis (à remplacer par contact@ananse.fr plus tard)
+  email = "v20100t@gmail.com"
+  ananse = "https://v20100t.github.io/ananse/"
+
+[languages]
+  [languages.fr]
+    languageName = "Français"
+    languageCode = "fr-FR"
+    title = "Ce qu'on peut faire avec le static"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-GB"
+    title = "What you can do with a static site"
+    weight = 2
