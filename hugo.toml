@@ -26,3 +26,6 @@ enableRobotsTXT = true
     languageCode = "en-GB"
     title = "What you can do with a static site"
     weight = 2
+
+[outputs]
+  home = ["HTML", "JSON"]

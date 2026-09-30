@@ -27,7 +27,7 @@ TEXTES = {
         "fin": "Ananse · On tisse votre web",
         "scenes": [
             "Bonjour ! Bienvenue sur « Ce qu'on peut faire avec le static », le site de démonstration d'Ananse.",
-            "Tous nos sites s'affichent en moins d'une seconde, sont parfaits sur téléphone, et ne déposent aucun cookie.",
+            "Chaque site que nous créons s'affiche en moins d'une seconde, est parfait sur téléphone, et ne dépose aucun cookie.",
             "Plus de soixante fonctions sont à essayer, une par page : contact, réseaux sociaux, paiement, réservation, et même des jeux.",
             "Par exemple, une roue de la chance, pour offrir une réduction à vos clients.",
             "Une fonction vous plaît ? Cochez « Je veux ça », et ajoutez un commentaire si vous le souhaitez.",
@@ -52,6 +52,16 @@ TEXTES = {
         ],
     },
 }
+
+# Prononciation : le texte écrit (sous-titres) reste « Ananse », la voix dit « Anansi ».
+PRONONCIATION = {"Ananse": "Anansi"}
+
+
+def dit(texte):
+    for ecrit, oral in PRONONCIATION.items():
+        texte = texte.replace(ecrit, oral)
+    return texte
+
 
 # Curseur visible (Playwright n'enregistre pas celui du système) et choix de départ dans le panier.
 INIT = """
@@ -84,7 +94,7 @@ async def voix(textes, voix_id, dossier):
     fichiers = []
     for i, t in enumerate(textes):
         f = dossier / f"voix-{i}.mp3"
-        await edge_tts.Communicate(t, voix_id, rate="+4%").save(str(f))
+        await edge_tts.Communicate(dit(t), voix_id, rate="+4%").save(str(f))
         fichiers.append(f)
     return fichiers
 

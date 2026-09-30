@@ -110,6 +110,12 @@
     L.push("", T(`Total : ${sel.length} fonction(s)`, `Total: ${sel.length} feature(s)`));
     const pal = document.querySelector(`[data-palette-choix="${d.dataset.palette}"]`);
     L.push(T(`Couleurs préférées : ${pal ? pal.dataset.nom : d.dataset.palette}, mode ${d.dataset.mode}`, `Preferred colours: ${pal ? pal.dataset.nom : d.dataset.palette}, ${({ auto: "auto", clair: "light", sombre: "dark" })[d.dataset.mode]} mode`));
+    const fd = form ? new FormData(form) : null, charte = fd ? fd.getAll("charte") : [], logo = fd ? fd.getAll("logo") : [];
+    if (charte.length || logo.length) {
+      L.push("", T("IDENTITÉ VISUELLE", "BRAND IDENTITY"));
+      if (charte.length) L.push(T("Charte graphique : ", "Visual style: ") + charte.join(T(" / ou ", " / or ")));
+      if (logo.length) L.push(T("Logo : ", "Logo: ") + logo.join(T(" / ou ", " / or ")));
+    }
     if ((v.message || "").trim()) L.push("", T("MON PROJET", "MY PROJECT"), v.message.trim());
     L.push("", T("MES COORDONNÉES", "MY DETAILS"));
     const ligne = (fr, en, val) => { if ((val || "").trim()) L.push(`${T(fr, en)} : ${val.trim()}`); };

@@ -8,6 +8,8 @@
       <h1>{{ site.Title }}</h1>
       <p class="hero__slogan">{{ T "slogan" }}</p>
       <p class="hero__intro">{{ T "intro" }}</p>
+      <button type="button" class="barre-recherche" data-ouvrir-recherche><span aria-hidden="true">🔍</span><span class="barre-recherche__texte">{{ T "recherche_aide" }}</span><kbd>/</kbd></button>
+      <p class="suggestions">{{ range (cond (eq site.Language.Lang "en") (slice "booking" "payment" "map" "games" "PDF" "restaurant" "video") (slice "réservation" "paiement" "carte" "jeux" "PDF" "resto" "vidéo")) }}<button type="button" class="d-puce" data-ouvrir-recherche data-q="{{ . }}">{{ . }}</button>{{ end }}</p>
       <p class="boutons">
         <a class="bouton" href="#demos">{{ T "commencer" }} ↓</a>
         <a class="bouton bouton--clair" href="{{ with site.GetPage "/devis" }}{{ .RelPermalink }}{{ end }}">🧺 {{ T "mondevis" }}</a>

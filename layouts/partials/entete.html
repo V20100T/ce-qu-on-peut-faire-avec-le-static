@@ -5,6 +5,7 @@
       <span class="logo__texte">{{ site.Title }}</span>
     </a>
     <nav class="nav" aria-label="Menu">
+      <button type="button" class="nav__recherche" data-ouvrir-recherche aria-label="{{ T "rechercher" }}" title="{{ T "rechercher" }} ( / )">🔍</button>
       <a href="{{ site.Home.RelPermalink }}#demos">{{ T "touteslesdemos" }}</a>
       <a href="{{ "metiers/" | relLangURL }}">{{ T "parmetier" }}</a>
       <a class="nav__devis" href="{{ with site.GetPage "/devis" }}{{ .RelPermalink }}{{ end }}">🧺 {{ T "mondevis" }} <span class="pastille" data-compteur>0</span></a>

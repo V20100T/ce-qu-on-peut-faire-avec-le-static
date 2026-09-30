@@ -33,6 +33,16 @@
         <label>{{ T "ville" }}<input name="ville" autocomplete="address-level2"></label>
         <label>{{ T "telephone" }}<input name="telephone" type="tel" autocomplete="tel"></label>
         <label>{{ T "siteactuel" }}<input name="site" type="url" placeholder="https://"></label>
+        <fieldset class="devis__options">
+          <legend>🎨 {{ T "charte" }} <small>({{ T "facultatif" }})</small></legend>
+          <label class="d-case"><input type="checkbox" name="charte" value="{{ T "charte_reprendre" }}"> {{ T "charte_reprendre" }}</label>
+          <label class="d-case"><input type="checkbox" name="charte" value="{{ T "charte_nouvelle" }}"> {{ T "charte_nouvelle" }}</label>
+        </fieldset>
+        <fieldset class="devis__options">
+          <legend>✏️ {{ T "logo" }} <small>({{ T "facultatif" }})</small></legend>
+          <label class="d-case"><input type="checkbox" name="logo" value="{{ T "logo_reprendre" }}"> {{ T "logo_reprendre" }}</label>
+          <label class="d-case"><input type="checkbox" name="logo" value="{{ T "logo_nouveau" }}"> {{ T "logo_nouveau" }}</label>
+        </fieldset>
         <label>{{ T "message" }}<textarea name="message" rows="4"></textarea></label>
         <p class="boutons">
           <button class="bouton" type="submit">✉️ {{ T "envoyer" }}</button>
